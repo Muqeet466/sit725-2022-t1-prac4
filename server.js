@@ -7,7 +7,7 @@ let projectCollection;
 
 // Database Connection
 
-const uri = "mongodb+srv://"+process.env.muqeet+":"+process.env.Nissanskyline@r34+"@cluster1.3ic2y.mongodb.net/sit725_2022_t1?retryWrites=true&w=majority"
+const uri = "mongodb+srv://muqeet:muqeet123@cluster1.3ic2y.mongodb.net/sit725_2022_t1?retryWrites=true&w=majority";
 const client = new MongoClient(uri,{ useNewUrlParser: true })
 
 
