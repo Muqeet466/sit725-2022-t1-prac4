@@ -1,3 +1,4 @@
+require('dotenv').config()
 var express = require("express")
 var app = express()
 var cors = require("cors")
@@ -6,7 +7,7 @@ let projectCollection;
 
 // Database Connection
 
-const uri = "mongodb+srv://muqeet:Nissanskyline@r34@cluster1.3ic2y.mongodb.net/sit725_2022_t1?retryWrites=true&w=majority"+process.env.MONGO_USER+":"+process.env.MONGO_PASSWORD+"@cloudbootcamp.bv4zn.mongodb.net/SIT725_2022_t1?retryWrites=true&w=majority" // replace it with the url you get from mongo atlas
+const uri = "mongodb+srv://"+process.env.muqeet+":"+process.env.Nissanskyline@r34+"@cluster1.3ic2y.mongodb.net/sit725_2022_t1?retryWrites=true&w=majority"
 const client = new MongoClient(uri,{ useNewUrlParser: true })
 
 
